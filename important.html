@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IITM Research Park - Conference Hall Booking</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <header class="sticky-header">
+        <div class="logo">
+            <img src="iit-logo.png" alt="IITM Research Park Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#halls" class="nav-link">Conference Halls</a></li>
+                <li><a href="#booking" class="nav-link">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>IITM Research Park</h1>
+                <h2>Premium Conference Halls</h2>
+                <p>To easy our offline classes</p>
+                <a href="#booking" class="cta-button">Book a Hall</a>
+            </div>
+        </section>
+
+        <section id="halls" class="conference-halls">
+            <div class="section-header">
+                <h2>Our Conference Halls</h2>
+                <p></p>
+            </div>
+            <div class="hall-grid">
+                <div class="hall-card">
+                    <div class="hall-image">
+                        <img src="sarabhai.png" alt="Sarabhai Hall">
+                    </div>
+                    <div class="hall-details">
+                        <h3>Sarabhai Hall</h3>
+                        <p>Capacity: 100 Seats</p>
+                    </div>
+                </div>
+                <div class="hall-card">
+                    <div class="hall-image">
+                        <img src="saha.png" alt="Saha Hall">
+                    </div>
+                    <div class="hall-details">
+                        <h3>Saha Hall</h3>
+                        <p>Capacity: 150 Seats</p>
+                    </div>
+                </div>
+                <div class="hall-card">
+                    <div class="hall-image">
+                        <img src="ramanujam.jpg" alt="Ramanujam Hall">
+                    </div>
+                    <div class="hall-details">
+                        <h3>Ramanujam Hall</h3>
+                        <p>Capacity: 80 Seats</p>
+                    </div>
+                </div>
+                <div class="hall-card">
+                    <div class="hall-image">
+                        <img src="stanlee.png" alt="Stanley Hall">
+                    </div>
+                    <div class="hall-details">
+                        <h3>Stanley Hall</h3>
+                        <p>Capacity: 120 Seats</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking" class="booking-section">
+            <div class="section-header">
+                <h2>Book a Conference Hall</h2>
+                <p>Simple and quick reservation process</p>
+            </div>
+            <div class="booking-container">
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="hall">Select Hall</label>
+                        <select id="hall" required>
+                            <option value="">Choose a Hall</option>
+                            <option value="Sarabhai">Sarabhai Hall</option>
+                            <option value="Saha">Saha Hall</option>
+                            <option value="Ramanujam">Ramanujam Hall</option>
+                            <option value="Stanley">Stanley Hall</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Preferred Date</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="participants">Number of Participants</label>
+                        <input type="number" id="participants" min="1" max="200" required>
+                    </div>
+                    <button type="submit" class="submit-button">Confirm Booking</button>
+                </form>
+                <div id="confirmation" class="confirmation-message"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; IITM Research Park. CPrime - 9th Floor.</p>
+        </div>
+    </footer>
+
+    <script src="scripting.js"></script>
+</body>
+</html>
